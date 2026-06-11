@@ -1,191 +1,195 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VEXORA E-SPORTS</title>
-<style>
-body{margin:0;background:#050505;color:#fff;font-family:Arial}
-.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:radial-gradient(circle,#700,#000)}
-h1{color:#ff2020} .btn{background:#f00;color:#fff;padding:12px 20px;text-decoration:none;border-radius:8px}
-</style></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEXORA ESPORTS</title>
+    <style>
+        /* Red, Black, and White Theme */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0b0b0b;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        /* Hero / Header Section */
+        header {
+            padding: 60px 20px;
+            background: linear-gradient(180deg, #1f0202 0%, #0b0b0b 100%);
+            border-bottom: 2px solid #ff0000;
+        }
+
+        .logo {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.5));
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            letter-spacing: 3px;
+            margin-top: 25px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        h1 span {
+            color: #ff0000;
+        }
+
+        .tagline {
+            color: #cccccc;
+            font-size: 1.1rem;
+            margin-top: -10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Team Section */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+            color: #ffffff;
+            font-weight: 800;
+        }
+
+        .section-title span {
+            color: #ff0000;
+        }
+
+        /* Roster Grid */
+        .roster-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        /* Player Card Design (Black, White, Red) */
+        .player-card {
+            background-color: #141414;
+            border: 2px solid #ffffff; /* Sharp white border */
+            border-radius: 0px; /* Sharp esports edges */
+            padding: 30px 20px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        /* Red hover effect */
+        .player-card:hover {
+            transform: scale(1.03);
+            border-color: #ff0000; /* Border changes to red on hover */
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+        }
+
+        /* Player Image Styling */
+        .player-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #ffffff;
+            margin-bottom: 15px;
+            background-color: #222; /* Fallback if image isn't loaded yet */
+            transition: border-color 0.3s ease;
+        }
+
+        .player-card:hover .player-img {
+            border-color: #ff0000; /* Picture frame flashes red on card hover */
+        }
+
+        .player-name {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .player-role {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            background-color: #ff0000; /* Bold red badge */
+            padding: 6px 16px;
+            display: inline-block;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 100px;
+            padding: 30px;
+            background-color: #000000;
+            color: #888888;
+            font-size: 0.85rem;
+            border-top: 1px solid #222222;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
 <body>
-<div class="hero">
-<h1>VEXORA E-SPORTS</h1>
-<p>FREE FIRE Competitive Team</p>
-<a class="btn" href="#join">Join Us</a>
-</div>
-<section id="join" class="join-section">
 
-  <h2>🔥 Join VEXORA E-SPORTS 🔥</h2>
-
-  <p>Think you have what it takes to represent VEXORA in Free Fire?</p>
-
-  <form action="https://formsubmit.co/vexora.esp@gmail.com" method="POST" class="join-form">
-
-    <input type="hidden" name="_subject" value="New VEXORA Application">
-
-    <input type="text" name="name" placeholder="In-Game Name" required>
-
-    <input type="text" name="uid" placeholder="Free Fire UID" required>
-
-    <input type="number" name="age" placeholder="Age" required>
-
-    <input type="text" name="rank" placeholder="Current Rank" required>
-
-    <input type="email" name="email" placeholder="Email Address" required>
-
-    <textarea name="about" rows="4" placeholder="Tell us about yourself"></textarea>
-
-    <button type="submit">⚔ APPLY TO JOIN ⚔</button>
-
-  </form>
-
-</section>
-
-<style>
-
-.join-section{
-
-    padding:80px 20px;
-
-    text-align:center;
-
-    background:#050505;
-
-}
-
-.join-section h2{
-
-    color:#ff2020;
-
-    font-size:2.5rem;
-
-    text-shadow:0 0 15px #ff0000;
-
-    margin-bottom:15px;
-
-}
-
-.join-section p{
-
-    color:#cccccc;
-
-    margin-bottom:30px;
-
-}
-
-.join-form{
-
-    max-width:600px;
-
-    margin:auto;
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:15px;
-
-}
-
-.join-form input,
-
-.join-form textarea{
-
-    background:#111;
-
-    border:2px solid #aa0000;
-
-    color:white;
-
-    padding:15px;
-
-    border-radius:10px;
-
-    font-size:16px;
-
-    outline:none;
-
-    transition:0.3s;
-
-}
-
-.join-form input:focus,
-
-.join-form textarea:focus{
-
-    border-color:#ff0000;
-
-    box-shadow:0 0 15px #ff0000;
-
-}
-
-.join-form button{
-
-    background:linear-gradient(45deg,#990000,#ff0000);
-
-    color:white;
-
-    border:none;
-
-    padding:16px;
-
-    border-radius:10px;
-
-    font-size:18px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:0.3s;
-
-    box-shadow:0 0 20px rgba(255,0,0,.5);
-
-}
-
-.join-form button:hover{
-
-    transform:scale(1.05);
-
-    box-shadow:0 0 30px rgba(255,0,0,.9);
-
-}
-
-</style><section style="padding:60px;background:#111;color:white;text-align:center;">
-<h1 style="color:#ff0000;">VEXORA E-SPORTS</h1>
-<p>FREE FIRE</p>
-<h2 style="color:#ff0000;">WE BELIEVE IN DOMINATION</h2>
-<h2 style="color:#ff0000;">ABOUT US</h2>
-<p>
-VEXORA E-SPORTS is a competitive Free Fire organization built on teamwork,
-discipline and domination. We strive to become one of the strongest teams
-and represent our community with pride.
-</p>
-<h2 style="color:#ff0000;">TEAM ROSTER</h2>
-<div style="border:2px solid red;padding:20px;margin:20px;border-radius:10px;">
-<h3>VEX-SH4YEK</h3>
-<p>Captain & Support</p>
-</div>
-<div style="border:2px solid red;padding:20px;margin:20px;border-radius:10px;">
-<h3>VEX-SIFAT</h3>
-<p>Sniper</p>
-</div>
-<div style="border:2px solid red;padding:20px;margin:20px;border-radius:10px;">
-<h3>VEX-MAHFUZ</h3>
-<p>IGL & Rusher</p>
-</div>
-<div style="border:2px solid red;padding:20px;margin:20px;border-radius:10px;">
-<h3>VEX-DELTA87</h3>
-<p>2nd Rusher</p>
-</div>
-<h2 style="color:#ff0000;">RECRUITMENT</h2>
-<p>STATUS: ALWAYS OPEN</p>
-<p>Contact us if you want to join VEXORA E-SPORTS.</p>
-<h2 style="color:#ff0000;">SPONSOR</h2>
-<p>SHAYEK AHMED TOHA</p>
-<h2 style="color:#ff0000;">CONTACT</h2>
-<p>Email: vexora.esp@gmail.com</p>
-<p>Instagram: @vexora.esp</p>
-<p>TikTok: @vexora.esp</p>
-<p>YouTube: VEXORA E-SPORTS</p>
-<p>Discord: VEXORA-ESP</p>
-</section></body></html>
+    <header>
+        <img src="vex.logo.png" alt="Vexora ESP Logo" class="logo">
+        <h1>VEXORA <span>ESP</span></h1>
+        <p class="tagline">Official Free Fire Team</p>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Active <span>Roster</span></h2>
+        
+        <div class="roster-grid">
+            
+            <div class="player-card">
+                <img src="shayek.png" alt="VEX-SH4YEK" class="player-img">
+                <div class="player-name">VEX-SH4YEK</div>
+                <div class="player-role">FOUNDER & SPONSOR / SUPPORTER</div>
+            </div>
+
+            <div class="player-card">
+                <img src="mahfuz.png" alt="VEX-MAHFUZ" class="player-img">
+                <div class="player-name">VEX-MAHFUZ</div>
+                <div class="player-role">IGL & 1ST RUSHER</div>
+            </div>
+
+            <div class="player-card">
+                <img src="delta87.png" alt="VEX-DELTA87" class="player-img">
+                <div class="player-name">VEX-DELTA87</div>
+                <div class="player-role">2ND RUSHER</div>
+            </div>
+
+            <div class="player-card">
+                <img src="sifat.png" alt="VEX-SIFAT" class="player-img">
+                <div class="player-name">VEX-SIFAT</div>
+                <div class="player-role">PLAYER</div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 VEXORA ESP. ALL RIGHTS RESERVED.
+    </footer>
+
+</body>
+</html>
